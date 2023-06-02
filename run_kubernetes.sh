@@ -19,6 +19,7 @@ kubectl run udacity-project4\
 # Step 3:
 # List kubernetes pods
 kubectl wait --for=condition=ready pod --all
+kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
