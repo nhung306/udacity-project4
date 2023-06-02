@@ -9,10 +9,10 @@ dockerpath="nhungtrinh/udacity_project4:latest"
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl run udacity_project4\
+kubectl run udacity-project4\
     --image=$dockerpath\
     
-    --port=80 --labels app=udacity_project4\
+    --port=80 --labels app=udacity-project4\
     --restart=Never
 
 
@@ -22,5 +22,5 @@ kubectl wait --for=condition=ready pod --all
 
 # Step 4:
 # Forward the container port to a host
-kubectl port-forward udacity_project4 8000:80
+kubectl port-forward udacity-project4 8000:80
 
